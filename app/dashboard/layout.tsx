@@ -1,29 +1,30 @@
-import { redirect } from "next/navigation"
-import { createClient } from "@/lib/supabase/server"
 import { DashboardNavbar } from "@/components/dashboard/navbar"
 
-export default async function DashboardLayout({
+// Mock user and profile for demo (works without DB connection)
+const MOCK_USER = {
+  id: "mock-user-123",
+  email: "user@example.com",
+  app_metadata: {},
+  user_metadata: {},
+  aud: "authenticated",
+  created_at: new Date().toISOString(),
+} as any
+
+const MOCK_PROFILE = {
+  id: "mock-user-123",
+  first_name: null,
+  last_name: null,
+  avatar_url: null,
+}
+
+export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  if (!user) {
-    redirect("/auth/login")
-  }
-
-  // Get user profile
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("*")
-    .eq("id", user.id)
-    .single()
-
   return (
     <div className="min-h-screen bg-secondary/30 flex flex-col">
-      <DashboardNavbar user={user} profile={profile} />
+      <DashboardNavbar user={MOCK_USER} profile={MOCK_PROFILE} />
       <main className="flex-1">
         <div className="container max-w-5xl mx-auto px-4 py-8">
           {children}
