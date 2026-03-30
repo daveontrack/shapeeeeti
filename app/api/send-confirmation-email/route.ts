@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "SHAPEthiopia <noreply@shapethiopia.org>",
+      from: "onboarding@resend.dev",
       to: email,
       subject: "Confirm Your SHAPEthiopia Account",
       html: `
