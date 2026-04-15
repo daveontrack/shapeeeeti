@@ -96,7 +96,6 @@ To create lasting impact by supporting:
 
 ## 🏗 System Architecture
 
-```mermaid
 graph TD;
 User --> Frontend
 Frontend --> Supabase
