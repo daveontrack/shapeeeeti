@@ -31,11 +31,8 @@ const allPosts = [
 
       <blockquote>
         "The impact we've witnessed goes far beyond the numbers. We've seen entire communities transform, with children becoming teachers, and beneficiaries becoming leaders."
-<<<<<<< HEAD
+
         <cite>— Desalegn Daka, Founder</cite>
-=======
-        <cite>— Dr. Abebe Tadesse, Founder</cite>
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
       </blockquote>
 
       <h2>The Ripple Effect of Change</h2>
@@ -68,17 +65,10 @@ const allPosts = [
     image: "/images/hero-ethiopia.jpg",
     category: "Milestone",
     author: {
-<<<<<<< HEAD
       name: "Desalegn Daka",
       role: "Founder & Executive Director",
       avatar: "/images/team-meeting.jpg",
       bio: "desalegn daka founded SHAPEthiopia in 2010 with a vision to transform communities through sustainable development."
-=======
-      name: "Dr. Abebe Tadesse",
-      role: "Founder & Executive Director",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Dr. Abebe Tadesse founded SHAPEthiopia in 2010 with a vision to transform communities through sustainable development."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     },
     date: "March 5, 2026",
     readTime: "5 min read",
@@ -121,17 +111,10 @@ const allPosts = [
     image: "/images/clean-water.jpg",
     category: "Clean Water",
     author: {
-<<<<<<< HEAD
       name: "Tesfa assaye",
       role: "Clean Water Program Director",
       avatar: "/images/team-meeting.jpg",
-      bio: "Tesfa assaye has led over 50 water projects across Ethiopia, bringing clean water to more than 30,000 people."
-=======
-      name: "Samuel Bekele",
-      role: "Clean Water Program Director",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Samuel has led over 50 water projects across Ethiopia, bringing clean water to more than 30,000 people."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
+      bio: "Tesfa assaye has led over 50 water projects across Ethiopia, bringing clean water to more than 30,000 people." 
     },
     date: "February 28, 2026",
     readTime: "3 min read",
@@ -171,17 +154,10 @@ const allPosts = [
     image: "/images/women-empowerment.jpg",
     category: "Women Empowerment",
     author: {
-<<<<<<< HEAD
       name: "Tesfa assaye",
       role: "Women's Empowerment Coordinator",
       avatar: "/images/team-meeting.jpg",
       bio: "Tesfa assaye has dedicated 8 years to empowering Ethiopian women through education and entrepreneurship."
-=======
-      name: "Meron Haile",
-      role: "Women's Empowerment Coordinator",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Meron has dedicated 8 years to empowering Ethiopian women through education and entrepreneurship."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     },
     date: "February 20, 2026",
     readTime: "4 min read",
@@ -217,17 +193,10 @@ const allPosts = [
     image: "/images/community-development.jpg",
     category: "Reports",
     author: {
-<<<<<<< HEAD
       name: "Meselech Biranu",
       role: "Communications Director",
       avatar: "/images/team-meeting.jpg",
       bio: "Meselech Biranu leads SHAPEthiopia's communications and reporting efforts."
-=======
-      name: "Hanna Girma",
-      role: "Communications Director",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Hanna leads SHAPEthiopia's communications and reporting efforts."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     },
     date: "February 15, 2026",
     readTime: "8 min read",
@@ -257,17 +226,10 @@ const allPosts = [
     image: "/images/children-education.jpg",
     category: "Education",
     author: {
-<<<<<<< HEAD
       name: "tadele tafese",
       role: "Women's Empowerment Coordinator",
       avatar: "/images/team-meeting.jpg",
       bio: "tadele tafese supports various education initiatives alongside her work in women's empowerment."
-=======
-      name: "Meron Haile",
-      role: "Women's Empowerment Coordinator",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Meron supports various education initiatives alongside her work in women's empowerment."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     },
     date: "February 10, 2026",
     readTime: "3 min read",
@@ -300,17 +262,10 @@ const allPosts = [
     image: "/images/team-meeting.jpg",
     category: "Volunteers",
     author: {
-<<<<<<< HEAD
       name: "Aba fekadu fako",
       role: "Volunteer Coordinator",
       avatar: "/images/team-meeting.jpg",
       bio: "Aba fekadu fako coordinates volunteer programs across all SHAPEthiopia centers."
-=======
-      name: "Samuel Bekele",
-      role: "Volunteer Coordinator",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Samuel coordinates volunteer programs across all SHAPEthiopia centers."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     },
     date: "February 5, 2026",
     readTime: "4 min read",
@@ -343,17 +298,10 @@ const allPosts = [
     image: "/images/community-development.jpg",
     category: "Partnerships",
     author: {
-<<<<<<< HEAD
       name: "Desalegn deka",
       role: "Founder & Executive Director",
       avatar: "/images/team-meeting.jpg",
       bio: "desalegn leads strategic partnerships and program development at SHAPEthiopia."
-=======
-      name: "Dr. Abebe Tadesse",
-      role: "Founder & Executive Director",
-      avatar: "/images/team-meeting.jpg",
-      bio: "Dr. Abebe leads strategic partnerships and program development at SHAPEthiopia."
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     },
     date: "January 28, 2026",
     readTime: "3 min read",

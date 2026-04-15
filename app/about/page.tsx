@@ -16,32 +16,7 @@ export const metadata: Metadata = {
   title: "About Us",
   description: "Learn about SHAPEthiopia's mission, vision, values, and 18+ years of community development work across Ethiopia. Meet our team and understand our approach.",
 }
-<<<<<<< HEAD
-=======
 
-// const values = [
-//   {
-//     icon: Heart,
-//     title: "Compassion",
-//     description: "We approach every community with empathy and genuine care for their wellbeing.",
-//   },
-//   {
-//     icon: Shield,
-//     title: "Integrity",
-//     description: "We maintain the highest standards of transparency and accountability in all our work.",
-//   },
-//   {
-//     icon: Handshake,
-//     title: "Partnership",
-//     description: "We work alongside communities, not for them, ensuring local ownership of solutions.",
-//   },
-//   {
-//     icon: TrendingUp,
-//     title: "Sustainability",
-//     description: "We design programs that create lasting change and empower self-reliance.",
-//   },
-// ]
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
 const values = [
   {
     icon: Heart,
@@ -84,31 +59,15 @@ const values = [
     description: "We operate openly and honestly, keeping our actions and decisions visible to all stakeholders.",
   },
 ];
-<<<<<<< HEAD
 
 const milestones = [
   { year: "2006", title: "Founded", description: "SHAPEthiopia established with the first H.O.P.E. Center in Shanto to support 150 children and widows." },
-=======
-// const milestones = [
-//   { year: "2005", title: "Founded", description: "SHAPEthiopia established with first center in Shanto" },
-//   { year: "2008", title: "First 500 Children", description: "Reached milestone of 500 children in education program" },
-//   { year: "2010", title: "Hawasa Center", description: "Opened second center focusing on women empowerment" },
-//   { year: "2012", title: "Clean Water Initiative", description: "Launched clean water program with first 10 wells" },
-//   { year: "2015", title: "10,000 Lives", description: "Programs reached over 10,000 beneficiaries" },
-//   { year: "2019", title: "6th Center", description: "Opened Arbamich center for youth development" },
-//   { year: "2024", title: "20,000+ Impact", description: "Now serving over 20,000 people across 6 centers" },
-// ]
-
-const milestones = [
-  { year: "2005", title: "Founded", description: "SHAPEthiopia established with the first H.O.P.E. Center in Shanto to support 150 children and widows." },
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
   { year: "2010", title: "Dale H.O.P.E. Center", description: "Opened Dale Center serving 150 orphaned and vulnerable children, providing education, meals, and medical care." },
   { year: "2011", title: "Humbo/Tebela Center", description: "Launched Humbo/Tebela Center enrolling 150 children with full educational and care support." },
   { year: "2016", title: "Boricha H.O.P.E. Center", description: "Started Boricha Center, providing 150 children with education, nutrition, and hygiene programs." },
   { year: "2016", title: "Hawassa H.O.P.E. Center", description: "Opened Hawassa Center serving vulnerable children in Tabor Sub-City, including daily meals and full sponsorship model." },
   { year: "2019", title: "Arba Minch Center", description: "Expanded to Arba Minch H.O.P.E. Center focusing on youth development and community programs." },
   { year: "2024", title: "20,000+ Impact", description: "SHAPEthiopia programs now positively impact over 20,000 children, women, and community members across multiple centers." },
-<<<<<<< HEAD
 
   { year: "2025", title: "Digital Transformation", description: "Introduced digital management systems for child sponsorship, education tracking, and donor engagement to improve efficiency and transparency." },
   { year: "2026", title: "New Regional Expansion", description: "Launched additional H.O.P.E. Center in a new region, extending services to underserved rural communities." },
@@ -139,51 +98,6 @@ const leadership = [
     name: "Messelech Biranu",
     role: "Grants, Finance, and HR Manager",
     bio: "Manages financial operations, grant administration, and human resources, ensuring transparency, compliance, and efficient organizational support systems.",
-=======
-];
-// const leadership = [
-//   {
-//     name: "Dr. Abebe Tadesse",
-//     role: "Executive Director",
-//     bio: "20+ years in community development across East Africa.",
-//   },
-//   {
-//     name: "Meron Haile",
-//     role: "Programs Director",
-//     bio: "Expert in education and child welfare programs.",
-//   },
-//   {
-//     name: "Samuel Bekele",
-//     role: "Operations Manager",
-//     bio: "Oversees all center operations and field teams.",
-//   },
-//   {
-//     name: "Hanna Girma",
-//     role: "Development Director",
-//     bio: "Leads fundraising and partnership initiatives.",
-//   },
-// ]
-const leadership = [
-  {
-    name: "Dr. Abebe Tadesse",
-    role: "Executive Director",
-    bio: "Founder of SHAPEthiopia with over 20 years of experience in child and youth development, women empowerment, and community programs across Ethiopia.",
-  },
-  {
-    name: "Meron Haile",
-    role: "Programs Director",
-    bio: "Leads SHAPEthiopia’s Child and Youth Development Program, H.O.P.E. Centers, and educational initiatives for vulnerable children.",
-  },
-  {
-    name: "Samuel Bekele",
-    role: "Operations Manager",
-    bio: "Oversees day-to-day operations of multiple H.O.P.E. Centers, ensures program delivery, and manages field staff across regions.",
-  },
-  {
-    name: "Hanna Girma",
-    role: "Development Director",
-    bio: "Drives fundraising, international partnerships, and sponsorship programs, including the Widows’ Hope Program and community empowerment projects.",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
   },
 ];
 
@@ -216,12 +130,9 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden">
-                <Image
-<<<<<<< HEAD
-                  src="/images/hero-ethiopia1.jpg"
-=======
-                  src="/images/hero-ethiopia.jpg"
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
+                <Image                  
+                src="/images/hero-ethiopia1.jpg"
+
                   alt="Ethiopian community members"
                   fill
                   className="object-cover"
@@ -337,11 +248,8 @@ export default function AboutPage() {
                   alt="SHAPEthiopia team meeting"
                   fill
                   className="object-cover"
-<<<<<<< HEAD
                   sizes="(max-width: 1024px) 100vw, 500vw"
-=======
-                  sizes="(max-width: 1024px) 100vw, 50vw"
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
+
                 />
               </div>
             </div>

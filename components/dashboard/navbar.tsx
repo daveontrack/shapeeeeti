@@ -2,11 +2,7 @@
 
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-<<<<<<< HEAD
 import { ArrowRight, User, Settings, LogOut } from "lucide-react"
-=======
-import { Heart, User, Settings, LogOut } from "lucide-react"
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   DropdownMenu,
@@ -71,11 +67,8 @@ export function DashboardNavbar({ user, profile }: DashboardNavbarProps) {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center">
-<<<<<<< HEAD
+
             <ArrowRight className="w-4 h-4 text-primary-foreground" />
-=======
-            <Heart className="w-4 h-4 text-primary-foreground" />
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
           </div>
           <span className="font-serif text-lg font-bold text-foreground hidden sm:inline-block">
             SHAPE<span className="text-primary">thiopia</span>

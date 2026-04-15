@@ -171,16 +171,10 @@ export default function CentersPage() {
                 6 Centers Serving Communities Across Ethiopia
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed">
-<<<<<<< HEAD
   Each of our centers serves as a hub for community transformation, providing
   essential services and support to thousands of families in Southern Ethiopia
   and the Sidama Region.
-</p>
-=======
-                Each of our centers serves as a hub for community transformation, providing
-                essential services and support to thousands of families in Southern Ethiopia.
               </p>
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
             </div>
           </div>
         </section>
@@ -249,13 +243,8 @@ export default function CentersPage() {
               </div>
               {/* Legend */}
               <div className="absolute bottom-4 left-4 px-4 py-2 bg-background/90 backdrop-blur-sm rounded-lg shadow text-sm">
-<<<<<<< HEAD
-  <span className="font-medium">SHAPEthiopia</span> - 6 Community Centers
-</div>
-=======
-                <span className="font-medium">Southern Ethiopia</span> - 6 Community Centers
+                <span className="font-medium">SHAPEthiopia</span> - 6 Community Centers
               </div>
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
             </div>
           </div>
         </section>

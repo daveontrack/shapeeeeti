@@ -5187,10 +5187,7 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-<<<<<<< HEAD
 import Link from "next/link"
-=======
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -6144,7 +6141,6 @@ ${formData.streetAddress ? `Street Address: ${formData.streetAddress}` : ''}
 
   return (
     <main
-<<<<<<< HEAD
       className="min-h-screen p-6 relative overflow-hidden"
       style={{
         backgroundImage: `
@@ -6193,16 +6189,6 @@ ${formData.streetAddress ? `Street Address: ${formData.streetAddress}` : ''}
         </div>
       </div>
 
-=======
-      className="min-h-screen p-6"
-      style={{
-        backgroundImage: "radial-gradient(circle at 15% 15%, rgba(96,165,250,0.25), transparent 40%), radial-gradient(circle at 90% 30%, rgba(14,165,233,0.2), transparent 50%), linear-gradient(to bottom, #eef2ff, #f9fafb)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
       <div className="mx-auto max-w-4xl">
         <Card className="shadow-2xl border border-blue-200/70 bg-white/90 backdrop-blur-sm rounded-3xl">
           <CardContent className="space-y-6 p-8 rounded-3xl ring-1 ring-blue-100/30">

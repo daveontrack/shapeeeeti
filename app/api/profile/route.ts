@@ -44,18 +44,11 @@ export async function POST(request: NextRequest): Promise<NextResponse<ProfileRe
       )
     }
 
-<<<<<<< HEAD
     // Update or create profile in Supabase
     const { data, error } = await supabase
       .from('profiles')
       .upsert({
         id: user.id,
-=======
-    // Update profile in Supabase
-    const { data, error } = await supabase
-      .from('profiles')
-      .update({
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
         first_name: body.first_name.trim(),
         last_name: body.last_name.trim(),
         phone: body.phone?.trim() || null,
@@ -63,14 +56,9 @@ export async function POST(request: NextRequest): Promise<NextResponse<ProfileRe
         city: body.city?.trim() || null,
         country: body.country?.trim() || null,
         updated_at: new Date().toISOString(),
-<<<<<<< HEAD
       }, {
         onConflict: 'id'
       })
-=======
-      })
-      .eq('id', user.id)
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
       .select()
       .single()
 
@@ -84,6 +72,8 @@ export async function POST(request: NextRequest): Promise<NextResponse<ProfileRe
 
     // Send profile update email via Resend
     try {
+      const avatarUrl = data?.avatar_url || user.user_metadata?.avatar_url || user.user_metadata?.picture || null
+
       const response = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
@@ -107,6 +97,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ProfileRe
                   .footer { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #6b7280; }
                   .detail { margin: 10px 0; }
                   .label { font-weight: bold; color: #374151; }
+                  .avatar { width: 80px; height: 80px; border-radius: 40px; margin-bottom: 20px; border: 3px solid #10b981; }
                 </style>
               </head>
               <body>
@@ -115,12 +106,13 @@ export async function POST(request: NextRequest): Promise<NextResponse<ProfileRe
                     <h1>Profile Updated</h1>
                   </div>
                   <div class="content">
+                    ${avatarUrl ? `<img src="${avatarUrl}" alt="Profile Picture" class="avatar">` : ''}
                     <p>Hello ${body.first_name},</p>
                     <p>Your profile has been successfully updated on SHAPEthiopia.</p>
                     
                     <h3>Updated Information:</h3>
                     <div class="detail">
-                      <span class="label">Name:</span> ${body.first_name} ${body.last_name}
+                        <span class="label">Name:</span> ${body.first_name} ${body.last_name}
                     </div>
                     ${body.phone ? `<div class="detail"><span class="label">Phone:</span> ${body.phone}</div>` : ''}
                     ${body.address ? `<div class="detail"><span class="label">Address:</span> ${body.address}</div>` : ''}
@@ -181,20 +173,12 @@ export async function GET(request: NextRequest): Promise<NextResponse<ProfileRes
       )
     }
 
-<<<<<<< HEAD
     // Fetch user profile - handle case where profile doesn't exist yet
-=======
-    // Fetch user profile
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     const { data, error } = await supabase
       .from('profiles')
       .select('*')
       .eq('id', user.id)
-<<<<<<< HEAD
       .maybeSingle()
-=======
-      .single()
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
 
     if (error) {
       console.error('[v0] Profile fetch error:', error)
@@ -204,7 +188,6 @@ export async function GET(request: NextRequest): Promise<NextResponse<ProfileRes
       )
     }
 
-<<<<<<< HEAD
     // If no profile exists, return default profile data
     const profileData = data || {
       id: user.id,
@@ -221,13 +204,8 @@ export async function GET(request: NextRequest): Promise<NextResponse<ProfileRes
       success: true,
       data: {
         ...profileData,
-=======
-    return NextResponse.json({
-      success: true,
-      data: {
-        ...data,
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
         email: user.email,
+        avatar_url: profileData.avatar_url || user.user_metadata?.avatar_url || user.user_metadata?.picture || null,
       },
     })
   } catch (error) {
@@ -238,3 +216,5 @@ export async function GET(request: NextRequest): Promise<NextResponse<ProfileRes
     )
   }
 }
+
+

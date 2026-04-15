@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
 
 :root {
   /* Warm humanitarian color palette - earthy tones with Ethiopian inspiration */
@@ -196,17 +195,6 @@ html {
 .animation-delay-400 {
   animation-delay: 400ms;
 }
-<<<<<<< HEAD
-
-/* Shimmer effect for backgrounds */
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
 
 .animate-shimmer {
   animation: shimmer 8s ease-in-out infinite;
@@ -252,5 +240,4 @@ html {
 .animate-bg-zoom {
   animation: bg-zoom 20s ease-in-out infinite;
 }
-=======
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
+

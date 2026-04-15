@@ -11,19 +11,11 @@ import { Calendar, Clock, ArrowRight, Search, User } from "lucide-react"
 
 const featuredPost = {
   id: "1",
-<<<<<<< HEAD
   title: "Celebrating 2,000 Lives Impacted: Our Journey of Transformation",
   excerpt: "As we reach this incredible milestone, we reflect on the communities transformed, the children educated, and the futures brightened through our collective efforts.",
   image: "/images/hero-ethiopia2.jpg",
   category: "Community",
   author: "Desalegn deka",
-=======
-  title: "Celebrating 20,000 Lives Impacted: Our Journey of Transformation",
-  excerpt: "As we reach this incredible milestone, we reflect on the communities transformed, the children educated, and the futures brightened through our collective efforts.",
-  image: "/images/hero-ethiopia.jpg",
-  category: "Community",
-  author: "Dr. Abebe Tadesse",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
   date: "March 5, 2026",
   readTime: "5 min read",
 }
@@ -31,19 +23,11 @@ const featuredPost = {
 const posts = [
   {
     id: "2",
-<<<<<<< HEAD
     title: "New FOOD Well Brings Hope to Boricha Village",
     excerpt: "Over 500 families now have access to clean FOOD, safe drinking water thanks to our latest water project.",
     image: "/images/clean-water1.jpg",
     category: "Clean Water",
     author: "Tesfa assaye",
-=======
-    title: "New Clean Water Well Brings Hope to Boricha Village",
-    excerpt: "Over 500 families now have access to clean, safe drinking water thanks to our latest water project.",
-    image: "/images/clean-water.jpg",
-    category: "Clean Water",
-    author: "Samuel Bekele",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     date: "February 28, 2026",
     readTime: "3 min read",
   },
@@ -53,11 +37,7 @@ const posts = [
     excerpt: "Our Hawasa center celebrates as 50 women complete their vocational training and launch businesses.",
     image: "/images/women-empowerment.jpg",
     category: "Women Empowerment",
-<<<<<<< HEAD
     author: "Tesfa assaye",
-=======
-    author: "Meron Haile",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     date: "February 20, 2026",
     readTime: "4 min read",
   },
@@ -67,11 +47,7 @@ const posts = [
     excerpt: "Review our achievements, challenges, and plans for the future in our comprehensive annual report.",
     image: "/images/community-development.jpg",
     category: "Reports",
-<<<<<<< HEAD
     author: "Meselech Biranu",
-=======
-    author: "Hanna Girma",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     date: "February 15, 2026",
     readTime: "8 min read",
   },
@@ -81,11 +57,7 @@ const posts = [
     excerpt: "With support from our donors, children across all six centers received school supplies for the new academic year.",
     image: "/images/children-education.jpg",
     category: "Education",
-<<<<<<< HEAD
     author: "tadele tafese",
-=======
-    author: "Meron Haile",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     date: "February 10, 2026",
     readTime: "3 min read",
   },
@@ -95,11 +67,7 @@ const posts = [
     excerpt: "Sarah spent two weeks at our Shanto center. Read about her experience and the impact she made.",
     image: "/images/team-meeting.jpg",
     category: "Volunteers",
-<<<<<<< HEAD
     author: "Aba fikadu ",
-=======
-    author: "Samuel Bekele",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     date: "February 5, 2026",
     readTime: "4 min read",
   },
@@ -107,15 +75,9 @@ const posts = [
     id: "7",
     title: "Partnership Announcement: New Agricultural Program",
     excerpt: "We're excited to announce a new partnership to bring sustainable farming techniques to rural communities.",
-<<<<<<< HEAD
     image: "/images/community-development1.jpg",
     category: "Community",
     author: "israel honja",
-=======
-    image: "/images/community-development.jpg",
-    category: "Community",
-    author: "Dr. Abebe Tadesse",
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
     date: "January 28, 2026",
     readTime: "3 min read",
   },

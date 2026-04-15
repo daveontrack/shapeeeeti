@@ -62,10 +62,6 @@ const contactInfo = [
 const socialLinks = [
   { href: "https://facebook.com/shapeethiopia", icon: Facebook, label: "Facebook" },
   { href: "https://twitter.com/shapeethiopia", icon: Twitter, label: "Twitter" },
-<<<<<<< HEAD
-=======
-  { href: "https://instagram.com/shapeethiopia", icon: Instagram, label: "Instagram" },
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
   { href: "https://linkedin.com/company/shapeethiopia", icon: Linkedin, label: "LinkedIn" },
   { href: "https://youtube.com/shapeethiopia", icon: Youtube, label: "YouTube" },
 ]

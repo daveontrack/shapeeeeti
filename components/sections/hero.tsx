@@ -25,11 +25,8 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/10 backdrop-blur-sm border border-background/20 text-background animate-fade-up">
             <Heart className="w-4 h-4 text-primary" />
-<<<<<<< HEAD
             <span className="text-sm font-medium">Transforming Lives Since 2006</span>
-=======
-            <span className="text-sm font-medium">Transforming Lives Since 2005</span>
->>>>>>> 15d4869a3d1f5707ade98ec9a559f125767e76d3
+
           </div>
 
           {/* Headline */}
