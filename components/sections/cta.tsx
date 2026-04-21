@@ -1,6 +1,9 @@
+'use client'
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Users, Handshake, Building2 } from "lucide-react"
+import { useAuthRedirect } from "@/hooks/use-auth-redirect"
 
 const actions = [
   {
@@ -10,6 +13,7 @@ const actions = [
     href: "/volunteer",
     buttonText: "Join Us",
     variant: "default" as const,
+    action: "volunteer",
   },
   {
     icon: Handshake,
@@ -18,6 +22,7 @@ const actions = [
     href: "/volunteer#partner",
     buttonText: "Become a Partner",
     variant: "outline" as const,
+    action: "volunteer",
   },
   {
     icon: Building2,
@@ -26,10 +31,12 @@ const actions = [
     href: "/volunteer#visit",
     buttonText: "Plan a Visit",
     variant: "outline" as const,
+    action: "volunteer",
   },
 ]
 
 export function CTASection() {
+  const { redirectToLoginIfNeeded } = useAuthRedirect()
   return (
     <section className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
@@ -63,8 +70,8 @@ export function CTASection() {
               <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                 {action.description}
               </p>
-              <Button variant={action.variant} asChild className="w-full">
-                <Link href={action.href}>{action.buttonText}</Link>
+              <Button variant={action.variant} onClick={() => redirectToLoginIfNeeded(action.href)} className="w-full">
+                {action.buttonText}
               </Button>
             </div>
           ))}

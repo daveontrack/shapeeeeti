@@ -1,9 +1,13 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Heart } from "lucide-react"
+import { useAuthRedirect } from "@/hooks/use-auth-redirect"
 
 export function HeroSection() {
+  const { redirectToLoginIfNeeded } = useAuthRedirect()
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -43,11 +47,9 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-up animation-delay-300">
-            <Button size="lg" asChild className="text-base px-8 bg-background/10 border-background/30 text-background hover:bg-background/20 hover:text-background">
-              <Link href="/volunteer">
-                Become a Volunteer
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+            <Button size="lg" onClick={() => redirectToLoginIfNeeded('/volunteer')} className="text-base px-8 bg-background/10 border-background/30 text-background hover:bg-background/20 hover:text-background">
+              Become a Volunteer
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
 

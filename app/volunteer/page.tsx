@@ -156,6 +156,20 @@ export default function VolunteerPage() {
       })
 
       if (error) throw error
+
+      // Send email notification
+      await fetch('/api/volunteer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          interest: interestLabels[formData.interest] || formData.interest,
+          message: formData.message,
+        }),
+      })
+
       setIsSubmitted(true)
       setFormData({ name: "", email: "", phone: "", interest: "", message: "" })
       setErrors({})
