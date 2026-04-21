@@ -104,18 +104,11 @@ export function MobileNav({ user, profile, displayName, initials, navLinks, onLo
                   </Button>
                 </>
               ) : (
-                <>
-                  <Button variant="outline" asChild>
-                    <Link href="/auth/login" onClick={() => setIsOpen(false)}>
-                      Sign In
-                    </Link>
-                  </Button>
-                  <Button asChild>
-                    <Link href="/donate" onClick={() => setIsOpen(false)}>
-                      Donate Now
-                    </Link>
-                  </Button>
-                </>
+                <Button variant="outline" asChild>
+                  <Link href="/auth/login" onClick={() => setIsOpen(false)}>
+                    Sign In
+                  </Link>
+                </Button>
               )}
             </div>
           </div>

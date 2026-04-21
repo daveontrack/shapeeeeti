@@ -16,7 +16,7 @@
 //   const isTesting = true
 //   if (isTesting) {
 //     // Define protected routes that require authentication
-//     const protectedPaths = ['/dashboard', '/donate']
+//     const protectedPaths = ['/dashboard']
 
 //     // Check if the current request path is protected
 //     const isProtectedRoute = protectedPaths.some(path =>
@@ -119,7 +119,7 @@
 //     data: { user },
 //   } = await supabase.auth.getUser()
 //   // Define protected routes that require authentication
-//   const protectedPaths = ['/dashboard', '/donate']
+//   const protectedPaths = ['/dashboard']
 
 //   // Check if the current request path is protected
 //   const isProtectedRoute = protectedPaths.some(path =>
@@ -131,8 +131,8 @@
 //     const url = request.nextUrl.clone()
 //     url.pathname = '/auth/login'
 //     // Preserve the original destination for post-login redirect
-//   // Protect dashboard, admin, and donate routes
-//   const protectedPaths = ['/dashboard', '/donate']
+//   // Protect dashboard routes
+//   const protectedPaths = ['/dashboard']
 //   const isProtectedRoute = protectedPaths.some(path => 
 //     request.nextUrl.pathname.startsWith(path)
 //   )
@@ -160,7 +160,7 @@ export async function updateSession(request: NextRequest) {
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
   // Define protected routes
-  const protectedPaths = ['/dashboard', '/donate']
+  const protectedPaths = ['/dashboard']
   const isProtectedRoute = protectedPaths.some(path =>
     request.nextUrl.pathname.startsWith(path)
   )

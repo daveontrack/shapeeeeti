@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: '%s | SHAPEthiopia',
   },
   description: 'SHAPEthiopia is a nonprofit organization dedicated to humanitarian impact and community development in Ethiopia. Join us in empowering children, women, and communities.',
-  keywords: ['nonprofit', 'Ethiopia', 'humanitarian', 'community development', 'charity', 'volunteer', 'donate', 'children', 'women empowerment'],
+  keywords: ['nonprofit', 'Ethiopia', 'humanitarian', 'community development', 'charity', 'volunteer', 'children', 'women empowerment'],
   authors: [{ name: 'SHAPEthiopia' }],
   creator: 'SHAPEthiopia',
   openGraph: {

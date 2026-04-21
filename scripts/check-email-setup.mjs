@@ -105,7 +105,6 @@ function showNextSteps() {
     '',
     '3. Test Email Sending:',
     '   → Sign up at /auth/signup (tests Supabase confirmation email)',
-    '   → Donate at /donate (tests Resend thank you email)',
     '',
     '4. Check Email Logs:',
     '   → Supabase: Dashboard → Logs → Recent events',

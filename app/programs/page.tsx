@@ -203,12 +203,6 @@ export default function ProgramsPage() {
                     ))}
                   </ul>
                   <div className="flex gap-4 pt-4">
-                    <Button asChild>
-                      <Link href="/donate">
-                        <Heart className="mr-2 h-4 w-4" />
-                        Support This Program
-                      </Link>
-                    </Button>
                     <Button variant="outline" asChild>
                       <Link href="/volunteer">
                         Get Involved
@@ -233,12 +227,6 @@ export default function ProgramsPage() {
               Join us in creating lasting change.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
-                <Link href="/donate">
-                  <Heart className="mr-2 h-5 w-5" />
-                  Donate Now
-                </Link>
-              </Button>
               <Button size="lg" variant="outline" asChild className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 <Link href="/volunteer">
                   Become a Volunteer

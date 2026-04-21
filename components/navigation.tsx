@@ -224,7 +224,7 @@
 //                 <Link href='/auth/login'>Sign In</Link>
 //               </Button>
 //               <Button asChild>
-//                 <Link href='/donate'>Donate</Link>
+
 //               </Button>
 //             </>
 //           )}
@@ -435,14 +435,9 @@ export function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <>
-              <Button variant="ghost" asChild>
-                <Link href="/auth/login">Sign In</Link>
-              </Button>
-              <Button asChild>
-                <Link href="/donate">Donate</Link>
-              </Button>
-            </>
+            <Button variant="ghost" asChild>
+              <Link href="/auth/login">Sign In</Link>
+            </Button>
           )}
         </div>
 

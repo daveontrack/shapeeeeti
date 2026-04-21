@@ -9,7 +9,7 @@
 //   { href: "/programs", label: "Our Programs" },
 //   { href: "/centers", label: "Our Centers" },
 //   { href: "/volunteer", label: "Volunteer" },
-//   { href: "/donate", label: "Donate" },
+
 //   { href: "/blog", label: "Blog" },
 // ]
 
@@ -174,7 +174,6 @@ const quickLinks = [
   { href: "/programs", label: "Our Programs" },
   { href: "/centers", label: "Our Centers" },
   { href: "/volunteer", label: "Volunteer" },
-  { href: "/donate", label: "Donate" },
   { href: "/blog", label: "Blog" },
 ];
 

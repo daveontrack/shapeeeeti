@@ -568,9 +568,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                         <p className="opacity-90 mb-6 text-sm">
                           Your donation helps us continue transforming lives across Ethiopia.
                         </p>
-                        <Button variant="secondary" asChild className="w-full">
-                          <Link href="/donate">Donate Now</Link>
-                        </Button>
+
                       </div>
                     </CardContent>
                   </Card>

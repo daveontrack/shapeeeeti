@@ -364,12 +364,6 @@ export default function AboutPage() {
               ways to be part of the SHAPEthiopia family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <Link href="/donate">
-                  <Heart className="mr-2 h-5 w-5" />
-                  Donate Now
-                </Link>
-              </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/volunteer">
                   Get Involved

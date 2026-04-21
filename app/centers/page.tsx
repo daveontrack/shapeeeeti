@@ -369,12 +369,7 @@ export default function CentersPage() {
                   Plan a Visit
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/donate">
-                  <Heart className="mr-2 h-5 w-5" />
-                  Support Our Centers
-                </Link>
-              </Button>
+
             </div>
           </div>
         </section>

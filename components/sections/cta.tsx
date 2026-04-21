@@ -1,23 +1,15 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Heart, Users, Handshake, Building2 } from "lucide-react"
+import { Users, Handshake, Building2 } from "lucide-react"
 
 const actions = [
-  {
-    icon: Heart,
-    title: "Make a Donation",
-    description: "Your contribution directly supports our programs and the communities we serve.",
-    href: "/donate",
-    buttonText: "Donate Now",
-    variant: "default" as const,
-  },
   {
     icon: Users,
     title: "Become a Volunteer",
     description: "Join our team of dedicated volunteers making a difference in Ethiopia.",
     href: "/volunteer",
     buttonText: "Join Us",
-    variant: "outline" as const,
+    variant: "default" as const,
   },
   {
     icon: Handshake,
