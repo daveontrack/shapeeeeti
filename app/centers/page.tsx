@@ -1,3 +1,5 @@
+'use client'
+
 import { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -5,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Users, GraduationCap, Heart, ExternalLink } from "lucide-react"
+import { useAuthRedirect } from "@/hooks/use-auth-redirect"
 
 export const metadata: Metadata = {
   title: "Our Centers",
@@ -154,6 +157,28 @@ const centers = [
     ],
   },
 ]
+
+function CenterActionButton() {
+  const { redirectToLoginIfNeeded } = useAuthRedirect()
+  
+  return (
+    <Button onClick={() => redirectToLoginIfNeeded('/volunteer#visit')}>
+      Visit This Center
+    </Button>
+  )
+}
+
+function CentersPageButtons() {
+  const { redirectToLoginIfNeeded } = useAuthRedirect()
+  
+  return (
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <Button size="lg" onClick={() => redirectToLoginIfNeeded('/volunteer#visit')}>
+        Plan a Visit
+      </Button>
+    </div>
+  )
+}
 
 export default function CentersPage() {
   return (
@@ -332,11 +357,7 @@ export default function CentersPage() {
                         </div>
 
                         <div className="flex flex-wrap gap-4 pt-4">
-                          <Button asChild>
-                            <Link href="/volunteer#visit">
-                              Visit This Center
-                            </Link>
-                          </Button>
+                          <CenterActionButton />
                           <Button variant="outline" asChild>
                             <a href={center.mapUrl} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="mr-2 h-4 w-4" />
@@ -363,13 +384,7 @@ export default function CentersPage() {
               Experience our work firsthand. We welcome visitors, volunteers, and partners
               to tour our centers and see the impact of community-driven development.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <Link href="/volunteer#visit">
-                  Plan a Visit
-                </Link>
-              </Button>
-
+            <CentersPageButtons />
             </div>
           </div>
         </section>

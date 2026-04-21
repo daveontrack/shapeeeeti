@@ -57,7 +57,7 @@ import { AuthForm } from "@/components/auth-form"
 
 function LoginContent() {
   const searchParams = useSearchParams()
-  const redirectTo = searchParams.get("redirectTo") || "/"
+  const redirectTo = searchParams.get("redirect") || searchParams.get("redirectTo") || "/"
 
   return (
     <div className="min-h-screen bg-secondary/30 flex flex-col">
